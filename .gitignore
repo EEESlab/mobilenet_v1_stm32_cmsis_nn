@@ -1,0 +1,5 @@
+.settings/*
+/Debug/
+/Release/
+NUCLEO-H743ZI.xml
+*.cfg
