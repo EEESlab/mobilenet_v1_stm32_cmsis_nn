@@ -1,6 +1,6 @@
 # Mobilenet V1 for STM32 over CMSIS-NN
 
-This project contains an STM32 application for executing a quantized Mobilenet v1 ('160x160x3', alpha '0.25') trained for Imangenet on a STM32H7 NUCLEO evaluation board.
+This project contains an STM32 application for executing a quantized Mobilenet v1 (`160x160x3`, alpha `0.25`) trained for Imangenet on a STM32H7 NUCLEO evaluation board.
 
 ## Support and Contribution
 If you want to collaborate, contribute, or to rise *issues* and suggestions to this project you can use the [Issues](https://github.com/EEESlab/mobilenet_v1_stm32_cmsis_nn/issues) page or contact us:
@@ -20,13 +20,11 @@ Only a limitated set of configurations for MobileNet can be hosted on a ST32H7 d
   <img src="docs/mobilenets.png" alt="mobilenet family for STM32H7" align="middle" width="512">
 </p>
 
-The parameters used on this project is image input '160x160x3' and alpha '0.25'. The following table show the classification performance of such configuration.
+The parameters used on this project is image input `160x160x3` and alpha `0.25`. The following table show the classification performance of such configuration.
 
-<p align="center">
 Model  | Million MACs | Million Parameters | Top-1 Accuracy| Top-5 Accuracy |
 :----:|:------------:|:----------:|:-------:|:-------:|
 [MobileNet_v1_0.25_160_uint8](http://download.tensorflow.org/models/mobilenet_v1_2018_08_02/mobilenet_v1_0.25_160_quant.tgz)|21|0.47|43.4|68.5|
-</p>
 
 ### UINT8 Asymmetric Quantization for CMSIS-NN
 To limit the classification error introduced by the quantization this Mobilenet implementation uses our extended [CMSIS-NN](https://github.com/EEESlab/CMSIS_NN-INTQ) that support an *Asymmetric Quantization* methodology mapped on *UINT8* datatypes.
@@ -38,34 +36,48 @@ Shortly we will release a Python script for the import of pre-trained Tensorflow
 ## Getting-Started on STM Workbench
 + Get a STMicroelectronics [NUCLEO STM32H743ZI](https://www.st.com/en/evaluation-tools/nucleo-h743zi.html)
 + Install [System Workbench for STM32](https://www.st.com/en/development-tools/sw4stm32.html) for your OS and open it
-+ Click 'File> Import...', then select 'Git> Project from Git' and click the button 'Next'
++ Click `File> Import...`, then select `Git> Project from Git` and click the button `Next`
+
 <p align="center">
-  <img src="docs/import1.jpg" align="middle" width="128">
+  <img src="docs/import1.jpg" align="middle" width="256">
 </p>
-+ Select 'Clone URI' and click the button 'Next'
+
++ Select `Clone URI` and click the button `Next`
+
 <p align="center">
-  <img src="docs/import2.jpg" align="middle" width="128">
+  <img src="docs/import2.jpg" align="middle" width="256">
 </p>
-+ Add the URI 'https://github.com/EEESlab/mobilenet_v1_stm32_cmsis_nn.git' and click 'Next'
+
++ Add the URI `https://github.com/EEESlab/mobilenet_v1_stm32_cmsis_nn.git` and click `Next`
+
 <p align="center">
-  <img src="docs/import3.jpg" align="middle" width="128">
+  <img src="docs/import3.jpg" align="middle" width="256">
 </p>
-+ Select all the branches and click the button 'Next'
+
++ Select all the branches and click the button `Next`
+
 <p align="center">
-  <img src="docs/import4.jpg" align="middle" width="128">
+  <img src="docs/import4.jpg" align="middle" width="256">
 </p>
-+ Select the local destination and click the button 'Next'
+
++ Select the local destination and click the button `Next`
+
 <p align="center">
-  <img src="docs/import5.jpg" align="middle" width="128">
+  <img src="docs/import5.jpg" align="middle" width="256">
 </p>
-+ Select how to import the project and click the button 'Next'
+
++ Select how to import the project and click the button `Next`
+
 <p align="center">
-  <img src="docs/import6.jpg" align="middle" width="128">
+  <img src="docs/import6.jpg" align="middle" width="256">
 </p>
+
 + Import the project (finally)!
+
 <p align="center">
-  <img src="docs/import7.jpg" align="middle" width="128">
+  <img src="docs/import7.jpg" align="middle" width="256">
 </p>
+
 + Build and run the application!
 
 ## Measured Performance
