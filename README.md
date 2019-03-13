@@ -1,4 +1,4 @@
-# Mobilenet V1 for STM32 over CMSIS
+# Mobilenet V1 for STM32 over CMSIS-NN
 
 This project contains a STM32 Workbench project to run a Mobilenet v1 ('160x160x3', alpha '0.25') on a STM32H7 NUCLEO evaluation board.
 
@@ -17,6 +17,10 @@ Model  | Million MACs | Million Parameters | Top-1 Accuracy| Top-5 Accuracy |
 
 ## Asymmetric UINT8 CMSIS-NN support
 To limit the classification error introduced by the quantization this mobilenet implementation uses an extended [CMSIS-NN](https://github.com/EEESlab/CMSIS_NN-INTQ) that support an aymmetric quantization methodology mapped on UINT8 datatypes.
+You find additional information on this [article](https://medium.com/@manuele.rusci/running-mobilenet-on-stm32-mcus-at-the-edge-e217db934f83).
+
+## Howto import a Tensorflow model
+Shortly will be release a Python script for the import of pre-trained Tensorflow models.
 
 ## Getting-Started on STM Workbench
 + Get a STMicroelectronics [NUCLEO STM32H743ZI](https://www.st.com/en/evaluation-tools/nucleo-h743zi.html)
