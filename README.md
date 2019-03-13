@@ -39,43 +39,43 @@ Shortly we will release a Python script for the import of pre-trained Tensorflow
 + Click `File> Import...`, then select `Git> Project from Git` and click the button `Next`
 
 <p align="center">
-  <img src="docs/import1.jpg" align="middle" width="256">
+  <img src="docs/import1.jpg" align="middle" width="340">
 </p>
 
 + Select `Clone URI` and click the button `Next`
 
 <p align="center">
-  <img src="docs/import2.jpg" align="middle" width="256">
+  <img src="docs/import2.jpg" align="middle" width="340">
 </p>
 
 + Add the URI `https://github.com/EEESlab/mobilenet_v1_stm32_cmsis_nn.git` and click `Next`
 
 <p align="center">
-  <img src="docs/import3.jpg" align="middle" width="256">
+  <img src="docs/import3.jpg" align="middle" width="340">
 </p>
 
 + Select all the branches and click the button `Next`
 
 <p align="center">
-  <img src="docs/import4.jpg" align="middle" width="256">
+  <img src="docs/import4.jpg" align="middle" width="340">
 </p>
 
 + Select the local destination and click the button `Next`
 
 <p align="center">
-  <img src="docs/import5.jpg" align="middle" width="256">
+  <img src="docs/import5.jpg" align="middle" width="340">
 </p>
 
 + Select how to import the project and click the button `Next`
 
 <p align="center">
-  <img src="docs/import6.jpg" align="middle" width="256">
+  <img src="docs/import6.jpg" align="middle" width="340">
 </p>
 
 + Import the project (finally)!
 
 <p align="center">
-  <img src="docs/import7.jpg" align="middle" width="256">
+  <img src="docs/import7.jpg" align="middle" width="340">
 </p>
 
 + Build and run the application!
