@@ -17,7 +17,7 @@ MobileNets trade off between latency, size and accuracy while comparing favorabl
 
 Only a limitated set of configurations for MobileNet can be hosted on a ST32H7 device, memory limitation are there (2MB flash + 512kB L2 SRAM). The following chart highlights the subset of configurations compatible for the device.
 <p align="center">
-  <img src="docs/mobilenets.png" alt="mobilenet family for STM32H7" align="middle" width="512">
+  <img src="docs/imgs/mobilenets-stm32h7.png" alt="mobilenet family for STM32H7" align="middle" width="512">
 </p>
 
 The parameters used on this project is image input `160x160x3` and alpha `0.25`. The following table show the classification performance of such configuration.
@@ -39,13 +39,13 @@ Shortly we will release a Python script for the import of pre-trained Tensorflow
 + Click `File> Import...`, then select `Git> Project from Git` and click the button `Next`
 
 <p align="center">
-  <img src="docs/import1.jpg" align="middle" width="340">
+  <img src="docs/imgs/import1.jpg" align="middle" width="340">
 </p>
 
 + Select `Clone URI` and click the button `Next`
 
 <p align="center">
-  <img src="docs/import2.jpg" align="middle" width="340">
+  <img src="docs/imgs/import2.jpg" align="middle" width="340">
 </p>
 
 + Add the URI `https://github.com/EEESlab/mobilenet_v1_stm32_cmsis_nn.git` and click `Next`
@@ -57,25 +57,25 @@ Shortly we will release a Python script for the import of pre-trained Tensorflow
 + Select all the branches and click the button `Next`
 
 <p align="center">
-  <img src="docs/import4.jpg" align="middle" width="340">
+  <img src="docs/imgs/import4.jpg" align="middle" width="340">
 </p>
 
 + Select the local destination and click the button `Next`
 
 <p align="center">
-  <img src="docs/import5.jpg" align="middle" width="340">
+  <img src="docs/imgs/import5.jpg" align="middle" width="340">
 </p>
 
 + Select how to import the project and click the button `Next`
 
 <p align="center">
-  <img src="docs/import6.jpg" align="middle" width="340">
+  <img src="docs/imgs/import6.jpg" align="middle" width="340">
 </p>
 
 + Import the project (finally)!
 
 <p align="center">
-  <img src="docs/import7.jpg" align="middle" width="340">
+  <img src="docs/imgs/import7.jpg" align="middle" width="340">
 </p>
 
 + Build and run the application!
@@ -84,7 +84,7 @@ Shortly we will release a Python script for the import of pre-trained Tensorflow
 The following table show the profiling layer-per-layer of this Mobilenet implementation on the STM32H7 running at 400MHz.
 
 <p align="center">
-  <img src="docs/profiling.jpg" align="middle" width="720">
+  <img src="docs/imgs/profiling_160_0_25.png" align="middle" width="720">
 </p>
 
 
