@@ -81,8 +81,12 @@ Shortly we will release a Python script for the import of pre-trained Tensorflow
 + Build and run the application!
 
 ## Measured Performance
-The following table show the performance and the profiling layer-per-layer of this mobilenet implementation.
-![alt text](docs/profiling_160_0_25.png)
+The following table show the profiling layer-per-layer of this Mobilenet implementation on the STM32H7 running at 400MHz.
+
+<p align="center">
+  <img src="docs/profiling.jpg" align="middle" width="720">
+</p>
+
 
 ## Limitations
 + The project supports only STM32H7 board.
