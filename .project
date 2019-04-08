@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>intq-mobilenet-v1</name>
-	<comment />
+	<name>intq-mobilenet-v1-multiprecision-4chin</name>
+	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>

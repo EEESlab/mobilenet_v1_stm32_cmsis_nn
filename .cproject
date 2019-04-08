@@ -30,7 +30,7 @@
 								</outputEntries>
 							</builder>
 							<tool command="gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1973953564" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
-								<option defaultValue="gnu.c.optimization.level.none" id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.1591601531" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.more" valueType="enumerated"/>
+								<option defaultValue="gnu.c.optimization.level.none" id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.1591601531" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.750157582" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.531916025" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="../Inc"/>
@@ -109,9 +109,9 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="CMSIS/CMSIS/Core/Template|CMSIS/CMSIS/DSP/Examples|CMSIS/CMSIS/DSP/DSP_Lib_TestSuite|CMSIS/Device|CMSIS/CMSIS/NN/Scripts|CMSIS/CMSIS/NN/NN_Lib_Tests|CMSIS/CMSIS/NN/Examples|CMSIS/CMSIS/DSP/Projects|CMSIS/CMSIS/Driver|CMSIS/CMSIS/DoxyGen|CMSIS/CMSIS/Documentation|CMSIS/CMSIS/DAP|CMSIS/CMSIS/CoreValidation|CMSIS/CMSIS/Core_A|CMSIS/CMSIS/Lib|CMSIS/CMSIS/Utilities|CMSIS/CMSIS/RTOS2|CMSIS/CMSIS/RTOS|CMSIS/CMSIS/Pack" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
+						<entry excluding="CMSIS/CMSIS/DSP/Examples|CMSIS/CMSIS/NN/Examples|CMSIS/CMSIS/NN/NN_Lib_Tests|CMSIS/CMSIS/RTOS|CMSIS/CMSIS/NN/Source/PoolingFunctions/arm_pool_asym_uint8_HWC.c|CMSIS/CMSIS/NN/Scripts|CMSIS/CMSIS/DoxyGen|CMSIS/CMSIS/Utilities|CMSIS/CMSIS/Pack|CMSIS/CMSIS/CoreValidation|CMSIS/CMSIS/RTOS2|CMSIS/CMSIS/Documentation|CMSIS/CMSIS/DSP/DSP_Lib_TestSuite|CMSIS/CMSIS/Core_A|CMSIS/CMSIS/DSP/Projects|CMSIS/CMSIS/Driver|CMSIS/Device|CMSIS/CMSIS/Core/Template|CMSIS/CMSIS/DAP|CMSIS/CMSIS/Lib" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Inc"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
+						<entry excluding="main_v_int4.c|main_v3.c|main_v4.c|main_v2.c|main_v1.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
 					</sourceEntries>
 				</configuration>
@@ -141,9 +141,9 @@
 							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1271644263" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" useByScannerDiscovery="false" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv5-d16" valueType="enumerated"/>
 							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.981184706" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" useByScannerDiscovery="false" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
 							<targetPlatform archList="all" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.1537927671" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
-							<builder buildPath="${workspace_loc:/intq-mobilenet-v1}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.821450679" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="12" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/intq-mobilenet-v1}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.821450679" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="12" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
 							<tool command="gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.546154246" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
-								<option defaultValue="gnu.c.optimization.level.none" id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.504724212" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.more" valueType="enumerated"/>
+								<option defaultValue="gnu.c.optimization.level.none" id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.504724212" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1851477714" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.945026613" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="../Inc"/>
@@ -169,7 +169,8 @@
 								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.320590432.1773156362" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-fmessage-length=0" valueType="string"/>
 								<option id="gnu.c.compiler.option.dialect.std.544368074" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.files.684775509" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
-								<option id="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other.333199040" name="Other flags" superClass="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-fmessage-length=0" valueType="string"/>
+								<option id="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other.333199040" name="Other flags" superClass="fr.ac6.managedbuid.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-fmessage-length=0 -Wno-overflow" valueType="string"/>
+								<option id="gnu.c.compiler.option.warnings.allwarn.772141335" name="All warnings (-Wall)" superClass="gnu.c.compiler.option.warnings.allwarn" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1856673277" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.850903384" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
 							</tool>
@@ -223,9 +224,9 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="CMSIS/CMSIS/Core/Template|CMSIS/CMSIS/DSP/Examples|CMSIS/CMSIS/DSP/DSP_Lib_TestSuite|CMSIS/Device|CMSIS/CMSIS/NN/Scripts|CMSIS/CMSIS/NN/NN_Lib_Tests|CMSIS/CMSIS/NN/Examples|CMSIS/CMSIS/DSP/Projects|CMSIS/CMSIS/Driver|CMSIS/CMSIS/DoxyGen|CMSIS/CMSIS/Documentation|CMSIS/CMSIS/DAP|CMSIS/CMSIS/CoreValidation|CMSIS/CMSIS/Core_A|CMSIS/CMSIS/Lib|CMSIS/CMSIS/Utilities|CMSIS/CMSIS/RTOS2|CMSIS/CMSIS/RTOS|CMSIS/CMSIS/Pack" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
+						<entry excluding="CMSIS/CMSIS/DSP/Examples|CMSIS/CMSIS/NN/Examples|CMSIS/CMSIS/NN/NN_Lib_Tests|CMSIS/CMSIS/RTOS|CMSIS/CMSIS/NN/Source/PoolingFunctions/arm_pool_asym_uint8_HWC.c|CMSIS/CMSIS/NN/Scripts|CMSIS/CMSIS/DoxyGen|CMSIS/CMSIS/Utilities|CMSIS/CMSIS/Pack|CMSIS/CMSIS/CoreValidation|CMSIS/CMSIS/RTOS2|CMSIS/CMSIS/Documentation|CMSIS/CMSIS/DSP/DSP_Lib_TestSuite|CMSIS/CMSIS/Core_A|CMSIS/CMSIS/DSP/Projects|CMSIS/CMSIS/Driver|CMSIS/Device|CMSIS/CMSIS/Core/Template|CMSIS/CMSIS/DAP|CMSIS/CMSIS/Lib" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Inc"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
+						<entry excluding="main_v_int4.c|main_v3.c|main_v4.c|main_v2.c|main_v1.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
 					</sourceEntries>
 				</configuration>
@@ -253,4 +254,5 @@
 		<configuration configurationName="Release"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
